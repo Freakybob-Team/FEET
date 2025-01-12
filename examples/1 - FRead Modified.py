@@ -1,5 +1,8 @@
 import json
 
+print("Freakifest Validator for FreakyBrowse")
+print("Warning! If you do not have F.json in the same directory, or its not set up properly, this will not work.")
+
 with open('F.fest', 'r') as file:
     data = json.load(file)
     print("Freakifest Version: " + data['f_ver'])
@@ -7,4 +10,5 @@ with open('F.fest', 'r') as file:
     print("Software Version: " + data['soft_ver'])
     print("Description: " + data['description'])
     print("Minimum FreakyBrowse Version: " + data['MinFBVersion'])
+    print("Success! ✅")
     file.close()
